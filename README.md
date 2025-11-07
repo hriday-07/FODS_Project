@@ -45,7 +45,7 @@ The notebook performs:
 │
 └── README.md
 ```
-Each folder inside `model_runs/` contains:
+Each folder inside `model_runs/` (except Lending Club Dataset) contains (for UCI Credit Card Dataset):
 - `*_model.joblib` — trained model  
 - `*_preprocessor.joblib` — fitted ColumnTransformer  
 - `*_feature_names.json` — list of features after preprocessing  
