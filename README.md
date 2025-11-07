@@ -1,6 +1,6 @@
 # Loan Default Prediction
 
-This repo contains an end-to-end pipeline to train and evaluate multiple classifiers on the **UCI “Default of Credit Card Clients (Taiwan)”** dataset, including:
+This repo contains an end-to-end pipeline to train and evaluate multiple classifiers on the **UCI “Default of Credit Card Clients (Taiwan)”** dataset and **Lending Club Loan Dataset** dataset, including:
 
 - Logistic Regression (Elastic-Net, CV)
 - Decision Tree (with isotonic calibration)
