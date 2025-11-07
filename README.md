@@ -68,3 +68,14 @@ or
 3. Update the dataset path in the notebook if needed:
    ```python
    DATA_PATH = "/content/drive/MyDrive/clients.xls"
+
+
+   ### ⚠️ Common Issue: LightGBM / pycparser Error
+
+While running the LightGBM training cell in Google Colab, you may encounter an **AttributeError** or import failure caused by a corrupted installation of `pycparser`.
+
+**Fix:**
+```python
+!pip uninstall -y pycparser lightgbm
+!pip install pycparser lightgbm
+
