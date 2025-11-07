@@ -17,32 +17,34 @@ The notebook performs:
 
 ---
 ## 📁 Repository Structure
+
+```text
 .
 ├── data/
-│   ├── best_threshold.joblib        # Model artifact (Lending Club)
-│   ├── categorical_features.joblib  # Preprocessing artifact (Lending Club)
-│   ├── clients.xls                  # Dataset (UCI Credit Card Default)
-│   ├── feature_columns.joblib       # Preprocessing artifact (Lending Club)
-│   ├── imputation_values.joblib     # Preprocessing artifact (Lending Club)
-│   ├── label_encoders.joblib        # Preprocessing artifact (Lending Club)
-│   ├── lgbm_calibrated_model.joblib # Model artifact (Lending Club)
-│   ├── lending-club.zip             # Dataset (Lending Club)
-│   └── shap_explainer.joblib        # Model artifact (Lending Club)
+│   ├── best_threshold.joblib        # Model artifact (Lending Club)
+│   ├── categorical_features.joblib  # Preprocessing artifact (Lending Club)
+│   ├── clients.xls                  # Dataset (UCI Credit Card Default)
+│   ├── feature_columns.joblib       # Preprocessing artifact (Lending Club)
+│   ├── imputation_values.joblib     # Preprocessing artifact (Lending Club)
+│   ├── label_encoders.joblib        # Preprocessing artifact (Lending Club)
+│   ├── lgbm_calibrated_model.joblib # Model artifact (Lending Club)
+│   ├── lending-club.zip             # Dataset (Lending Club)
+│   └── shap_explainer.joblib        # Model artifact (Lending Club)
 │
 ├── model_runs/
-│   ├── CatBoost/
-│   ├── Decision Trees/
-│   ├── LightGBM/
-│   ├── Logistic Regression/
-│   └── XGBoost/
+│   ├── CatBoost/
+│   ├── Decision Trees/
+│   ├── LightGBM/
+│   ├── Logistic Regression/
+│   └── XGBoost/
 │
 ├── src/
-│   ├── app.py                       # Main application (Streamlit) for Lending Club dataset
-│   ├── lending_club_models.ipynb    # Notebook for Lending Club dataset
-│   └── UCI_Combined.ipynb           # Notebook for UCI dataset
+│   ├── app.py                       # Main application (Streamlit) for Lending Club dataset
+│   ├── lending_club_models.ipynb    # Notebook for Lending Club dataset
+│   └── UCI_Combined.ipynb           # Notebook for UCI dataset
 │
 └── README.md
-
+```
 Each folder inside `model_runs/` contains:
 - `*_model.joblib` — trained model  
 - `*_preprocessor.joblib` — fitted ColumnTransformer  
