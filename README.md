@@ -17,7 +17,6 @@ The notebook performs:
 
 ---
 ## 📁 Repository Structure
-
 .
 ├── data/
 │   ├── best_threshold.joblib        # Model artifact (Lending Club)
