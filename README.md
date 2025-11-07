@@ -16,24 +16,23 @@ The notebook performs:
 5) saving all artifacts (models, preprocessor, feature order, probabilities, curves, metrics, and environment info).
 
 ---
-
-## 📦 Repository Structure
+## 📁 Repository Structure
 
 .
-├── data/
-│ └── clients.xls # Dataset file (UCI Credit Card Default dataset)
-│
-├── src/
-│ └── UCI_Combined.ipynb # Main Jupyter notebook (complete pipeline)
-│
-├── model_runs/
-│ ├── Logistic Regression/ # Artifacts for Logistic Regression
-│ ├── Decision Trees/ # Artifacts for Decision Tree + calibrated model
-│ ├── XGBoost/ # Artifacts for tuned XGBoost
-│ ├── LightGBM/ # Artifacts for tuned LightGBM
-│ └── CatBoost/ # Artifacts for tuned CatBoost
-│
-└── README.md # Project documentation
+├── data/  
+│   └── clients.xls                # Dataset file (UCI Credit Card Default dataset)  
+│  
+├── src/  
+│   └── UCI_Combined.ipynb         # Main Jupyter notebook (complete pipeline)  
+│  
+├── model_runs/  
+│   ├── logistic_regression/       # Artifacts for Logistic Regression  
+│   ├── decision_tree/             # Artifacts for Decision Tree + calibrated model  
+│   ├── xgboost/                   # Artifacts for tuned XGBoost  
+│   ├── lightgbm/                  # Artifacts for tuned LightGBM  
+│   └── catboost/                  # Artifacts for tuned CatBoost  
+│  
+└── README.md                      # You are here  
 
 Each folder inside `model_runs/` contains:
 - `*_model.joblib` — trained model  
