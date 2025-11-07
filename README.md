@@ -21,22 +21,22 @@ The notebook performs:
 ```text
 .
 ├── data/
-│   ├── best_threshold.joblib        # Model artifact (Lending Club)
-│   ├── categorical_features.joblib  # Preprocessing artifact (Lending Club)
-│   ├── clients.xls                  # Dataset (UCI Credit Card Default)
-│   ├── feature_columns.joblib       # Preprocessing artifact (Lending Club)
-│   ├── imputation_values.joblib     # Preprocessing artifact (Lending Club)
-│   ├── label_encoders.joblib        # Preprocessing artifact (Lending Club)
-│   ├── lgbm_calibrated_model.joblib # Model artifact (Lending Club)
-│   ├── lending-club.zip             # Dataset (Lending Club)
-│   └── shap_explainer.joblib        # Model artifact (Lending Club)
+│   └── clients.xls                  # Dataset (UCI Credit Card Default)
 │
 ├── model_runs/
 │   ├── CatBoost/
 │   ├── Decision Trees/
 │   ├── LightGBM/
 │   ├── Logistic Regression/
-│   └── XGBoost/
+│   ├── XGBoost/
+│   └── Lending Club Dataset/
+│       ├── best_threshold.joblib        # Model artifact
+│       ├── categorical_features.joblib  # Preprocessing artifact
+│       ├── feature_columns.joblib       # Preprocessing artifact
+│       ├── imputation_values.joblib     # Preprocessing artifact
+│       ├── label_encoders.joblib        # Preprocessing artifact
+│       ├── lgbm_calibrated_model.joblib # Model artifact
+│       └── shap_explainer.joblib        # Model artifact
 │
 ├── src/
 │   ├── app.py                       # Main application (Streamlit) for Lending Club dataset
