@@ -1,0 +1,20 @@
+{
+  "random_state": 42,
+  "train_shape": [
+    24000,
+    23
+  ],
+  "test_shape": [
+    6000,
+    23
+  ],
+  "class_balance_train": [
+    18691,
+    5309
+  ],
+  "class_balance_test": [
+    4673,
+    1327
+  ],
+  "topk": 0.2
+}
