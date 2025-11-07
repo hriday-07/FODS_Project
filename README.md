@@ -19,20 +19,28 @@ The notebook performs:
 ## 📁 Repository Structure
 
 .
-├── data/  
-│   └── clients.xls                # Dataset file (UCI Credit Card Default dataset)  
-│  
-├── src/  
-│   └── UCI_Combined.ipynb         # Main Jupyter notebook (complete pipeline)  
-│  
-├── model_runs/  
-│   ├── logistic_regression/       # Artifacts for Logistic Regression  
-│   ├── decision_tree/             # Artifacts for Decision Tree + calibrated model  
-│   ├── xgboost/                   # Artifacts for tuned XGBoost  
-│   ├── lightgbm/                  # Artifacts for tuned LightGBM  
-│   └── catboost/                  # Artifacts for tuned CatBoost  
-│  
-└── README.md                      # You are here  
+├── data/
+│   ├── categorical_features.joblib  # Preprocessing artifact (Lending Club)
+│   ├── clients.xls                  # Dataset (UCI Credit Card Default)
+│   ├── feature_columns.joblib       # Preprocessing artifact (Lending Club)
+│   ├── imputation_values.joblib     # Preprocessing artifact (Lending Club)
+│   ├── label_encoders.joblib      # Preprocessing artifact (Lending Club)
+│   ├── lending-club.zip             # Dataset (Lending Club)
+│   └── shap_explainer.joblib        # Model artifact (Lending Club)
+│
+├── model_runs/
+│   ├── CatBoost/
+│   ├── Decision Trees/
+│   ├── LightGBM/
+│   ├── Logistic Regression/
+│   └── XGBoost/
+│
+├── src/
+│   ├── app.py                       # Main application (Streamlit) for Lending Club dataset
+│   ├── lending_club_models.ipynb    # Notebook for Lending Club dataset
+│   └── UCI_Combined.ipynb           # Notebook for UCI dataset
+│
+└── README.md                        # You are here
 
 Each folder inside `model_runs/` contains:
 - `*_model.joblib` — trained model  
@@ -68,7 +76,12 @@ or
 3. Update the dataset path in the notebook if needed:
    ```python
    DATA_PATH = "/content/drive/MyDrive/clients.xls"
+# For Lending Club dataset:
+1.  Downloads the "lending-club" dataset from Kaggle using a shell command.
+2. Unzips the downloaded file using a Python script.
 
+### Run the Web Application
+The src/app.py file runs a web interface using Streamlit to interact with the saved models.
 
 ### ⚠️ Common Issue: LightGBM / pycparser Error
 
