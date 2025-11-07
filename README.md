@@ -70,7 +70,7 @@ or
    DATA_PATH = "/content/drive/MyDrive/clients.xls"
 
 
-   ### ⚠️ Common Issue: LightGBM / pycparser Error
+### ⚠️ Common Issue: LightGBM / pycparser Error
 
 While running the LightGBM training cell in Google Colab, you may encounter an **AttributeError** or import failure caused by a corrupted installation of `pycparser`.
 
